@@ -1,3 +1,37 @@
+# =====================================================
+# CONFIGURATION NETLIFY - Arnold Paysages
+# =====================================================
+#
+# IMPORTANT: Site actuellement en mode MAINTENANCE
+#
+# Pour activer le site final, changez la ligne publish :
+#   - Mode maintenance (actuel) : publish = "maintenance"
+#   - Mode site complet         : publish = "site"
+#
+# =====================================================
+
 [build]
-  publish = ".next"
-  command = "npm run build"
+  # Mode MAINTENANCE activé - Le site affiche la page de maintenance
+  publish = "maintenance"
+  # Pas de commande de build nécessaire pour un site statique HTML/CSS
+  command = "echo 'Site statique - pas de build necessaire'"
+
+# Variables d'environnement pour désactiver le plugin Next.js
+# Ce projet contient des fichiers Next.js hérités mais le site
+# Arnold Paysages est purement statique (HTML/CSS)
+[build.environment]
+  NETLIFY_NEXT_PLUGIN_SKIP = "true"
+
+# Redirections (optionnel - pour une future configuration)
+# [[redirects]]
+#   from = "/*"
+#   to = "/index.html"
+#   status = 200
+
+# Headers de sécurité (optionnel)
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Arnold Paysages - Découvrez notre histoire, notre équipe et nos valeurs. Plus de 15 ans d'expertise en paysagisme.">
+    <title>À propos - Arnold Paysages</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header / Navigation -->
+    <header class="header">
+        <div class="header__container">
+            <a href="index.html" class="header__logo">
+                <div class="header__logo-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M17,8C8,10,5.9,16.17,3.82,21.34L5.71,22l1-2.3A4.49,4.49,0,0,0,8,20C19,20,22,3,22,3,21,5,14,5.25,9,6.25S2,11.5,2,13.5a6.22,6.22,0,0,0,1.75,3.75C7,8,17,8,17,8Z"/>
+                    </svg>
+                </div>
+                <span>Arnold Paysages</span>
+            </a>
+            <nav>
+                <button class="nav__toggle" aria-label="Menu" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav__list" id="navList">
+                    <li><a href="index.html" class="nav__link">Accueil</a></li>
+                    <li><a href="realisations.html" class="nav__link">Réalisations</a></li>
+                    <li><a href="a-propos.html" class="nav__link nav__link--active">À propos</a></li>
+                    <li><a href="avis.html" class="nav__link">Avis clients</a></li>
+                    <li><a href="contact.html" class="nav__link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <h1>À propos de nous</h1>
+        <p>Découvrez l'histoire, les valeurs et l'équipe qui font d'Arnold Paysages votre partenaire de confiance.</p>
+    </section>
+
+    <!-- Notre Histoire -->
+    <section class="section section--blanc">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about__content">
+                    <h2>Notre Histoire</h2>
+                    <p>
+                        Fondée il y a plus de 15 ans par Arnold, passionné de nature et d'aménagement extérieur,
+                        <strong>Arnold Paysages</strong> est née d'une vision simple : créer des espaces verts
+                        qui reflètent la personnalité de leurs propriétaires.
+                    </p>
+                    <p>
+                        Ce qui a commencé comme une petite entreprise locale est devenu un acteur reconnu
+                        du paysagisme dans la région. Grâce à notre engagement envers la qualité et notre
+                        écoute attentive des besoins de nos clients, nous avons construit une réputation
+                        solide basée sur la confiance et l'excellence.
+                    </p>
+                    <p>
+                        Aujourd'hui, notre équipe de professionnels qualifiés perpétue cette vision
+                        en apportant créativité, expertise technique et passion à chaque projet,
+                        qu'il s'agisse d'un petit jardin de ville ou d'un vaste espace paysager.
+                    </p>
+                </div>
+                <div class="about__image">
+                    <div class="gallery__placeholder" style="width: 100%; height: 100%; min-height: 350px;">
+                        [ Portrait d'Arnold ou photo de l'équipe ]
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nos Valeurs -->
+    <section class="section section--beige">
+        <div class="container">
+            <h2 class="section-title">Nos Valeurs</h2>
+            <div class="services">
+                <div class="card">
+                    <div class="card__content" style="text-align: center; padding: 2rem;">
+                        <div style="font-size: 3rem; color: var(--vert-secondaire); margin-bottom: 1rem;">🌱</div>
+                        <h3 class="card__title">Respect de la nature</h3>
+                        <p class="card__text">
+                            Nous privilégions des méthodes respectueuses de l'environnement et sélectionnons
+                            des végétaux adaptés au climat local pour créer des jardins durables.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card__content" style="text-align: center; padding: 2rem;">
+                        <div style="font-size: 3rem; color: var(--vert-secondaire); margin-bottom: 1rem;">🤝</div>
+                        <h3 class="card__title">Écoute & Proximité</h3>
+                        <p class="card__text">
+                            Chaque projet commence par une écoute attentive de vos envies.
+                            Nous construisons une relation de confiance basée sur la transparence.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card__content" style="text-align: center; padding: 2rem;">
+                        <div style="font-size: 3rem; color: var(--vert-secondaire); margin-bottom: 1rem;">⭐</div>
+                        <h3 class="card__title">Excellence</h3>
+                        <p class="card__text">
+                            Nous nous engageons à fournir un travail de qualité irréprochable,
+                            du premier contact jusqu'à la livraison finale de votre projet.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card__content" style="text-align: center; padding: 2rem;">
+                        <div style="font-size: 3rem; color: var(--vert-secondaire); margin-bottom: 1rem;">💡</div>
+                        <h3 class="card__title">Créativité</h3>
+                        <p class="card__text">
+                            Chaque espace est unique. Nous apportons des solutions créatives
+                            et personnalisées pour transformer votre extérieur en lieu d'exception.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Notre Équipe -->
+    <section class="section section--blanc">
+        <div class="container">
+            <h2 class="section-title">Notre Équipe</h2>
+            <div class="services" style="max-width: 900px; margin: 0 auto;">
+                <div class="card">
+                    <div class="card__image" style="height: 250px;">
+                        <span>[ Photo Arnold ]</span>
+                    </div>
+                    <div class="card__content" style="text-align: center;">
+                        <h3 class="card__title">Arnold</h3>
+                        <p style="color: var(--vert-secondaire); font-weight: 500; margin-bottom: 0.5rem;">Fondateur & Paysagiste</p>
+                        <p class="card__text">
+                            Passionné par les jardins depuis son enfance, Arnold a transformé sa passion
+                            en métier. 20 ans d'expérience au service de vos espaces verts.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card__image" style="height: 250px;">
+                        <span>[ Photo Thomas ]</span>
+                    </div>
+                    <div class="card__content" style="text-align: center;">
+                        <h3 class="card__title">Thomas</h3>
+                        <p style="color: var(--vert-secondaire); font-weight: 500; margin-bottom: 0.5rem;">Chef d'équipe</p>
+                        <p class="card__text">
+                            Expert en aménagement paysager et en maçonnerie extérieure.
+                            Thomas supervise les chantiers avec rigueur et professionnalisme.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card__image" style="height: 250px;">
+                        <span>[ Photo Julie ]</span>
+                    </div>
+                    <div class="card__content" style="text-align: center;">
+                        <h3 class="card__title">Julie</h3>
+                        <p style="color: var(--vert-secondaire); font-weight: 500; margin-bottom: 0.5rem;">Paysagiste conceptrice</p>
+                        <p class="card__text">
+                            Diplômée en architecture paysagère, Julie conçoit des plans
+                            sur mesure qui allient esthétique, fonctionnalité et biodiversité.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistiques -->
+    <section class="section section--vert">
+        <div class="container">
+            <h2 class="section-title">Arnold Paysages en chiffres</h2>
+            <div class="stats">
+                <div class="stat">
+                    <div class="stat__number">15+</div>
+                    <div class="stat__label">Années d'expérience</div>
+                </div>
+                <div class="stat">
+                    <div class="stat__number">500+</div>
+                    <div class="stat__label">Projets réalisés</div>
+                </div>
+                <div class="stat">
+                    <div class="stat__number">5</div>
+                    <div class="stat__label">Experts passionnés</div>
+                </div>
+                <div class="stat">
+                    <div class="stat__number">98%</div>
+                    <div class="stat__label">Clients satisfaits</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nos Engagements -->
+    <section class="section section--beige">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about__image">
+                    <div class="gallery__placeholder" style="width: 100%; height: 100%; min-height: 350px;">
+                        [ Photo d'un chantier en cours ]
+                    </div>
+                </div>
+                <div class="about__content">
+                    <h2>Nos Engagements</h2>
+                    <p>
+                        Chez Arnold Paysages, nous nous engageons à vous offrir bien plus qu'un simple
+                        service de paysagisme. Voici ce que nous vous garantissons :
+                    </p>
+                    <ul class="about__list">
+                        <li><strong>Devis gratuit et sans engagement</strong> - Nous nous déplaçons chez vous pour étudier votre projet</li>
+                        <li><strong>Prix justes et transparents</strong> - Pas de mauvaises surprises, le devis est respecté</li>
+                        <li><strong>Délais respectés</strong> - Nous nous engageons sur des dates et les tenons</li>
+                        <li><strong>Garantie de satisfaction</strong> - Nous assurons un suivi après les travaux</li>
+                        <li><strong>Assurance décennale</strong> - Tous nos travaux sont couverts</li>
+                        <li><strong>Produits de qualité</strong> - Végétaux et matériaux soigneusement sélectionnés</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section CTA -->
+    <section class="cta">
+        <div class="container">
+            <h2>Envie d'en savoir plus ?</h2>
+            <p>
+                Rencontrez notre équipe et discutons de votre projet autour d'un café.
+                Nous serons ravis de vous conseiller.
+            </p>
+            <a href="contact.html" class="btn btn--marron">Contactez-nous</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__content">
+            <div class="footer__logo">Arnold Paysages</div>
+            <p class="footer__tagline">Votre partenaire pour des espaces verts d'exception</p>
+            <div class="footer__divider"></div>
+            <p class="footer__copyright">
+                &copy; 2024 Arnold Paysages - Tous droits réservés
+            </p>
+        </div>
+    </footer>
+
+    <!-- Script pour le menu mobile -->
+    <script>
+        function toggleMenu() {
+            const navList = document.getElementById('navList');
+            navList.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

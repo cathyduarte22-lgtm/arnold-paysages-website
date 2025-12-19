@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Arnold Paysages - Contactez-nous pour un devis gratuit. Aménagement paysager, création de jardins et entretien d'espaces verts.">
+    <title>Contact & Devis - Arnold Paysages</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header / Navigation -->
+    <header class="header">
+        <div class="header__container">
+            <a href="index.html" class="header__logo">
+                <div class="header__logo-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M17,8C8,10,5.9,16.17,3.82,21.34L5.71,22l1-2.3A4.49,4.49,0,0,0,8,20C19,20,22,3,22,3,21,5,14,5.25,9,6.25S2,11.5,2,13.5a6.22,6.22,0,0,0,1.75,3.75C7,8,17,8,17,8Z"/>
+                    </svg>
+                </div>
+                <span>Arnold Paysages</span>
+            </a>
+            <nav>
+                <button class="nav__toggle" aria-label="Menu" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav__list" id="navList">
+                    <li><a href="index.html" class="nav__link">Accueil</a></li>
+                    <li><a href="realisations.html" class="nav__link">Réalisations</a></li>
+                    <li><a href="a-propos.html" class="nav__link">À propos</a></li>
+                    <li><a href="avis.html" class="nav__link">Avis clients</a></li>
+                    <li><a href="contact.html" class="nav__link nav__link--active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <h1>Contactez-nous</h1>
+        <p>Une question ? Un projet ? N'hésitez pas à nous contacter pour un devis gratuit et personnalisé.</p>
+    </section>
+
+    <!-- Section Contact -->
+    <section class="section section--blanc">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Formulaire -->
+                <div class="contact-form">
+                    <h2 style="margin-bottom: 1.5rem; color: var(--vert-principal);">Demande de devis gratuit</h2>
+                    <form action="#" method="POST">
+                        <div class="form-group">
+                            <label for="nom">Nom complet *</label>
+                            <input type="text" id="nom" name="nom" placeholder="Votre nom et prénom" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Adresse email *</label>
+                            <input type="email" id="email" name="email" placeholder="votre@email.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="telephone">Téléphone *</label>
+                            <input type="tel" id="telephone" name="telephone" placeholder="06 12 34 56 78" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="ville">Ville / Commune</label>
+                            <input type="text" id="ville" name="ville" placeholder="Toulouse, Blagnac, Colomiers...">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="service">Type de prestation souhaitée</label>
+                            <select id="service" name="service">
+                                <option value="">-- Sélectionnez une option --</option>
+                                <option value="creation-jardin">Création de jardin</option>
+                                <option value="amenagement">Aménagement extérieur (terrasse, allée...)</option>
+                                <option value="entretien">Entretien régulier</option>
+                                <option value="elagage">Élagage / Abattage</option>
+                                <option value="engazonnement">Engazonnement</option>
+                                <option value="cloture">Clôture / Haie</option>
+                                <option value="autre">Autre (préciser dans le message)</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="surface">Surface approximative du terrain (m²)</label>
+                            <input type="text" id="surface" name="surface" placeholder="Ex: 200 m²">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Décrivez votre projet *</label>
+                            <textarea id="message" name="message" rows="6" placeholder="Décrivez votre projet, vos attentes, les contraintes éventuelles..." required></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label style="display: flex; align-items: flex-start; gap: 0.75rem; cursor: pointer;">
+                                <input type="checkbox" name="rgpd" required style="width: auto; margin-top: 4px;">
+                                <span style="font-size: 0.9rem; color: var(--gris-texte);">
+                                    J'accepte que mes données soient utilisées pour traiter ma demande.
+                                    Elles ne seront jamais transmises à des tiers. *
+                                </span>
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn--primary" style="width: 100%;">
+                            Envoyer ma demande de devis
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Informations de contact -->
+                <div class="contact-info">
+                    <h2 style="margin-bottom: 2rem; color: var(--vert-principal);">Nos coordonnées</h2>
+
+                    <div class="contact-info__item">
+                        <div class="contact-info__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <div class="contact-info__title">Adresse</div>
+                            <p class="contact-info__text">
+                                Arnold Paysages<br>
+                                123 Route des Jardins<br>
+                                31000 Toulouse
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info__item">
+                        <div class="contact-info__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <div class="contact-info__title">Téléphone</div>
+                            <p class="contact-info__text">
+                                05 61 XX XX XX<br>
+                                <span style="font-size: 0.85rem;">Du lundi au vendredi, 8h-18h</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info__item">
+                        <div class="contact-info__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <div class="contact-info__title">Email</div>
+                            <p class="contact-info__text">
+                                contact@arnold-paysages.fr
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info__item">
+                        <div class="contact-info__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <div class="contact-info__title">Horaires</div>
+                            <p class="contact-info__text">
+                                Lundi - Vendredi : 8h00 - 18h00<br>
+                                Samedi : Sur rendez-vous<br>
+                                Dimanche : Fermé
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Zone d'intervention -->
+                    <div style="background: var(--beige-clair); padding: 1.5rem; border-radius: 12px; margin-top: 2rem;">
+                        <h3 style="color: var(--vert-principal); margin-bottom: 1rem;">Zone d'intervention</h3>
+                        <p style="color: var(--gris-texte); font-size: 0.95rem;">
+                            Nous intervenons dans un rayon de <strong>50 km</strong> autour de Toulouse :
+                            Blagnac, Colomiers, Tournefeuille, Ramonville, L'Union, Balma, Castanet-Tolosan,
+                            Muret, Cugnaux, Portet-sur-Garonne et environs.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map placeholder -->
+    <section class="section section--beige" style="padding: 0;">
+        <div style="height: 350px; background: var(--gris-clair); display: flex; align-items: center; justify-content: center;">
+            <div class="text-center">
+                <p style="color: var(--gris-texte); margin-bottom: 1rem;">[ Carte Google Maps - Zone d'intervention ]</p>
+                <p style="font-size: 0.9rem; color: var(--gris-texte);">Toulouse et environs (50 km)</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Processus -->
+    <section class="section section--blanc">
+        <div class="container">
+            <h2 class="section-title">Comment ça marche ?</h2>
+            <div class="services">
+                <div class="card">
+                    <div class="card__content" style="text-align: center; padding: 2rem;">
+                        <div style="width: 60px; height: 60px; background: var(--vert-secondaire); color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; font-weight: 700; margin: 0 auto 1rem;">1</div>
+                        <h3 class="card__title">Demande de devis</h3>
+                        <p class="card__text">
+                            Remplissez le formulaire ci-dessus ou appelez-nous pour nous parler de votre projet.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card__content" style="text-align: center; padding: 2rem;">
+                        <div style="width: 60px; height: 60px; background: var(--vert-secondaire); color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; font-weight: 700; margin: 0 auto 1rem;">2</div>
+                        <h3 class="card__title">Visite gratuite</h3>
+                        <p class="card__text">
+                            Nous nous déplaçons chez vous pour étudier votre terrain et comprendre vos attentes.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card__content" style="text-align: center; padding: 2rem;">
+                        <div style="width: 60px; height: 60px; background: var(--vert-secondaire); color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; font-weight: 700; margin: 0 auto 1rem;">3</div>
+                        <h3 class="card__title">Devis détaillé</h3>
+                        <p class="card__text">
+                            Vous recevez un devis clair et transparent sous 48h, sans engagement de votre part.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card__content" style="text-align: center; padding: 2rem;">
+                        <div style="width: 60px; height: 60px; background: var(--vert-secondaire); color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; font-weight: 700; margin: 0 auto 1rem;">4</div>
+                        <h3 class="card__title">Réalisation</h3>
+                        <p class="card__text">
+                            Une fois le devis accepté, nous planifions et réalisons vos travaux dans les meilleurs délais.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section CTA -->
+    <section class="cta" style="background: var(--marron-accent);">
+        <div class="container">
+            <h2>Besoin d'un conseil ?</h2>
+            <p>
+                Notre équipe est à votre disposition pour répondre à toutes vos questions.
+                N'hésitez pas à nous appeler directement !
+            </p>
+            <a href="tel:0561XXXXXX" class="btn btn--primary" style="background: var(--vert-secondaire);">
+                Appeler maintenant
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__content">
+            <div class="footer__logo">Arnold Paysages</div>
+            <p class="footer__tagline">Votre partenaire pour des espaces verts d'exception</p>
+            <div class="footer__divider"></div>
+            <p class="footer__copyright">
+                &copy; 2024 Arnold Paysages - Tous droits réservés
+            </p>
+        </div>
+    </footer>
+
+    <!-- Script pour le menu mobile -->
+    <script>
+        function toggleMenu() {
+            const navList = document.getElementById('navList');
+            navList.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
