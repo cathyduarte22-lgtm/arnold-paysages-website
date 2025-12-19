@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Arnold Paysages - Découvrez nos réalisations en aménagement paysager, création de jardins et espaces verts.">
+    <title>Nos Réalisations - Arnold Paysages</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header / Navigation -->
+    <header class="header">
+        <div class="header__container">
+            <a href="index.html" class="header__logo">
+                <div class="header__logo-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M17,8C8,10,5.9,16.17,3.82,21.34L5.71,22l1-2.3A4.49,4.49,0,0,0,8,20C19,20,22,3,22,3,21,5,14,5.25,9,6.25S2,11.5,2,13.5a6.22,6.22,0,0,0,1.75,3.75C7,8,17,8,17,8Z"/>
+                    </svg>
+                </div>
+                <span>Arnold Paysages</span>
+            </a>
+            <nav>
+                <button class="nav__toggle" aria-label="Menu" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav__list" id="navList">
+                    <li><a href="index.html" class="nav__link">Accueil</a></li>
+                    <li><a href="realisations.html" class="nav__link nav__link--active">Réalisations</a></li>
+                    <li><a href="a-propos.html" class="nav__link">À propos</a></li>
+                    <li><a href="avis.html" class="nav__link">Avis clients</a></li>
+                    <li><a href="contact.html" class="nav__link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <h1>Nos Réalisations</h1>
+        <p>Découvrez une sélection de nos projets d'aménagement paysager réalisés avec passion et savoir-faire.</p>
+    </section>
+
+    <!-- Filtres de catégories -->
+    <section class="section section--beige" style="padding-top: 2rem; padding-bottom: 2rem;">
+        <div class="container text-center">
+            <button class="btn btn--primary" style="margin: 0.25rem;">Tous</button>
+            <button class="btn btn--secondary" style="margin: 0.25rem;">Jardins</button>
+            <button class="btn btn--secondary" style="margin: 0.25rem;">Terrasses</button>
+            <button class="btn btn--secondary" style="margin: 0.25rem;">Aménagements</button>
+            <button class="btn btn--secondary" style="margin: 0.25rem;">Élagage</button>
+        </div>
+    </section>
+
+    <!-- Galerie de réalisations -->
+    <section class="section section--blanc">
+        <div class="container">
+            <div class="gallery">
+                <!-- Réalisation 1 -->
+                <div class="gallery__item">
+                    <div class="gallery__placeholder">
+                        [ Jardin contemporain - Photo 1 ]
+                    </div>
+                    <div class="gallery__overlay">
+                        <h3>Jardin contemporain</h3>
+                        <p>Création complète d'un jardin moderne avec terrasse bois</p>
+                    </div>
+                </div>
+
+                <!-- Réalisation 2 -->
+                <div class="gallery__item">
+                    <div class="gallery__placeholder">
+                        [ Terrasse en pierre naturelle - Photo 2 ]
+                    </div>
+                    <div class="gallery__overlay">
+                        <h3>Terrasse en pierre naturelle</h3>
+                        <p>Aménagement d'une terrasse avec dallage en pierre</p>
+                    </div>
+                </div>
+
+                <!-- Réalisation 3 -->
+                <div class="gallery__item">
+                    <div class="gallery__placeholder">
+                        [ Jardin méditerranéen - Photo 3 ]
+                    </div>
+                    <div class="gallery__overlay">
+                        <h3>Jardin méditerranéen</h3>
+                        <p>Création d'un espace méditerranéen avec oliviers</p>
+                    </div>
+                </div>
+
+                <!-- Réalisation 4 -->
+                <div class="gallery__item">
+                    <div class="gallery__placeholder">
+                        [ Allée pavée - Photo 4 ]
+                    </div>
+                    <div class="gallery__overlay">
+                        <h3>Allée pavée</h3>
+                        <p>Réalisation d'une allée carrossable en pavés</p>
+                    </div>
+                </div>
+
+                <!-- Réalisation 5 -->
+                <div class="gallery__item">
+                    <div class="gallery__placeholder">
+                        [ Jardin zen - Photo 5 ]
+                    </div>
+                    <div class="gallery__overlay">
+                        <h3>Jardin zen</h3>
+                        <p>Création d'un espace de détente japonisant</p>
+                    </div>
+                </div>
+
+                <!-- Réalisation 6 -->
+                <div class="gallery__item">
+                    <div class="gallery__placeholder">
+                        [ Clôture végétale - Photo 6 ]
+                    </div>
+                    <div class="gallery__overlay">
+                        <h3>Clôture végétale</h3>
+                        <p>Plantation d'une haie naturelle en limite de propriété</p>
+                    </div>
+                </div>
+
+                <!-- Réalisation 7 -->
+                <div class="gallery__item">
+                    <div class="gallery__placeholder">
+                        [ Massifs fleuris - Photo 7 ]
+                    </div>
+                    <div class="gallery__overlay">
+                        <h3>Massifs fleuris</h3>
+                        <p>Création de massifs floraux quatre saisons</p>
+                    </div>
+                </div>
+
+                <!-- Réalisation 8 -->
+                <div class="gallery__item">
+                    <div class="gallery__placeholder">
+                        [ Élagage arbre centenaire - Photo 8 ]
+                    </div>
+                    <div class="gallery__overlay">
+                        <h3>Élagage professionnel</h3>
+                        <p>Intervention sur un chêne centenaire</p>
+                    </div>
+                </div>
+
+                <!-- Réalisation 9 -->
+                <div class="gallery__item">
+                    <div class="gallery__placeholder">
+                        [ Engazonnement - Photo 9 ]
+                    </div>
+                    <div class="gallery__overlay">
+                        <h3>Engazonnement</h3>
+                        <p>Création d'une pelouse de 500m² en semis</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Processus -->
+    <section class="section section--vert">
+        <div class="container">
+            <h2 class="section-title">Notre processus de travail</h2>
+            <div class="services">
+                <div class="card" style="background-color: rgba(255,255,255,0.1); color: #fff;">
+                    <div class="card__content">
+                        <h3 class="card__title" style="color: var(--beige-clair);">1. Consultation</h3>
+                        <p class="card__text" style="color: rgba(255,255,255,0.8);">
+                            Nous nous déplaçons gratuitement pour écouter vos envies et analyser votre terrain.
+                        </p>
+                    </div>
+                </div>
+                <div class="card" style="background-color: rgba(255,255,255,0.1); color: #fff;">
+                    <div class="card__content">
+                        <h3 class="card__title" style="color: var(--beige-clair);">2. Conception</h3>
+                        <p class="card__text" style="color: rgba(255,255,255,0.8);">
+                            Nous élaborons un projet personnalisé avec plans et devis détaillé.
+                        </p>
+                    </div>
+                </div>
+                <div class="card" style="background-color: rgba(255,255,255,0.1); color: #fff;">
+                    <div class="card__content">
+                        <h3 class="card__title" style="color: var(--beige-clair);">3. Réalisation</h3>
+                        <p class="card__text" style="color: rgba(255,255,255,0.8);">
+                            Notre équipe qualifiée réalise les travaux dans les règles de l'art.
+                        </p>
+                    </div>
+                </div>
+                <div class="card" style="background-color: rgba(255,255,255,0.1); color: #fff;">
+                    <div class="card__content">
+                        <h3 class="card__title" style="color: var(--beige-clair);">4. Suivi</h3>
+                        <p class="card__text" style="color: rgba(255,255,255,0.8);">
+                            Nous assurons un suivi après travaux et vous conseillons pour l'entretien.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section CTA -->
+    <section class="cta" style="background: var(--marron-accent);">
+        <div class="container">
+            <h2>Vous avez un projet en tête ?</h2>
+            <p>
+                Partagez-nous votre vision et nous la transformerons en réalité.
+                Chaque projet est unique, tout comme notre approche.
+            </p>
+            <a href="contact.html" class="btn btn--primary">Parlons de votre projet</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__content">
+            <div class="footer__logo">Arnold Paysages</div>
+            <p class="footer__tagline">Votre partenaire pour des espaces verts d'exception</p>
+            <div class="footer__divider"></div>
+            <p class="footer__copyright">
+                &copy; 2024 Arnold Paysages - Tous droits réservés
+            </p>
+        </div>
+    </footer>
+
+    <!-- Script pour le menu mobile -->
+    <script>
+        function toggleMenu() {
+            const navList = document.getElementById('navList');
+            navList.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

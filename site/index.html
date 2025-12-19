@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Arnold Paysages - Aménagement paysager, création de jardins et entretien d'espaces verts. Votre expert en paysagisme.">
+    <title>Arnold Paysages - Aménagement paysager & Espaces verts</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header / Navigation -->
+    <header class="header">
+        <div class="header__container">
+            <a href="index.html" class="header__logo">
+                <div class="header__logo-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M17,8C8,10,5.9,16.17,3.82,21.34L5.71,22l1-2.3A4.49,4.49,0,0,0,8,20C19,20,22,3,22,3,21,5,14,5.25,9,6.25S2,11.5,2,13.5a6.22,6.22,0,0,0,1.75,3.75C7,8,17,8,17,8Z"/>
+                    </svg>
+                </div>
+                <span>Arnold Paysages</span>
+            </a>
+            <nav>
+                <button class="nav__toggle" aria-label="Menu" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav__list" id="navList">
+                    <li><a href="index.html" class="nav__link nav__link--active">Accueil</a></li>
+                    <li><a href="realisations.html" class="nav__link">Réalisations</a></li>
+                    <li><a href="a-propos.html" class="nav__link">À propos</a></li>
+                    <li><a href="avis.html" class="nav__link">Avis clients</a></li>
+                    <li><a href="contact.html" class="nav__link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero__content">
+            <h1 class="hero__title">Transformez votre extérieur en havre de paix</h1>
+            <p class="hero__subtitle">
+                Arnold Paysages crée et entretient vos espaces verts avec passion et expertise.
+                Du jardin intimiste à l'aménagement paysager complet, nous donnons vie à vos projets.
+            </p>
+            <div class="hero__buttons">
+                <a href="contact.html" class="btn btn--primary">Demander un devis gratuit</a>
+                <a href="realisations.html" class="btn btn--secondary" style="background-color: transparent; border-color: #fff; color: #fff;">Voir nos réalisations</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Services -->
+    <section class="section section--blanc">
+        <div class="container">
+            <h2 class="section-title">Nos Services</h2>
+            <div class="services">
+                <!-- Service 1 -->
+                <div class="card">
+                    <div class="card__image">
+                        <span>[ Image création de jardins ]</span>
+                    </div>
+                    <div class="card__content">
+                        <h3 class="card__title">Création de jardins</h3>
+                        <p class="card__text">
+                            Conception et réalisation de jardins sur mesure adaptés à vos envies et à votre terrain.
+                            Nous créons des espaces harmonieux et durables.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="card">
+                    <div class="card__image">
+                        <span>[ Image entretien espaces verts ]</span>
+                    </div>
+                    <div class="card__content">
+                        <h3 class="card__title">Entretien d'espaces verts</h3>
+                        <p class="card__text">
+                            Tonte, taille, désherbage, traitement... Nous prenons soin de votre jardin tout au long
+                            de l'année pour le maintenir en parfait état.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="card">
+                    <div class="card__image">
+                        <span>[ Image aménagement extérieur ]</span>
+                    </div>
+                    <div class="card__content">
+                        <h3 class="card__title">Aménagement extérieur</h3>
+                        <p class="card__text">
+                            Terrasses, allées, clôtures, murets... Nous réalisons tous vos travaux d'aménagement
+                            pour sublimer votre espace extérieur.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="card">
+                    <div class="card__image">
+                        <span>[ Image élagage ]</span>
+                    </div>
+                    <div class="card__content">
+                        <h3 class="card__title">Élagage & Abattage</h3>
+                        <p class="card__text">
+                            Intervention professionnelle pour l'élagage et l'abattage de vos arbres en toute sécurité.
+                            Respect des normes et de l'environnement.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Statistiques -->
+    <section class="section section--vert">
+        <div class="container">
+            <div class="stats">
+                <div class="stat">
+                    <div class="stat__number">15+</div>
+                    <div class="stat__label">Années d'expérience</div>
+                </div>
+                <div class="stat">
+                    <div class="stat__number">500+</div>
+                    <div class="stat__label">Projets réalisés</div>
+                </div>
+                <div class="stat">
+                    <div class="stat__number">100%</div>
+                    <div class="stat__label">Clients satisfaits</div>
+                </div>
+                <div class="stat">
+                    <div class="stat__number">50km</div>
+                    <div class="stat__label">Zone d'intervention</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Pourquoi nous choisir -->
+    <section class="section section--beige">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about__image">
+                    <div class="gallery__placeholder" style="width: 100%; height: 100%; min-height: 300px;">
+                        [ Photo de l'équipe ou d'un chantier ]
+                    </div>
+                </div>
+                <div class="about__content">
+                    <h2>Pourquoi choisir Arnold Paysages ?</h2>
+                    <p>
+                        Depuis plus de 15 ans, Arnold Paysages accompagne les particuliers et les professionnels
+                        dans la création et l'entretien de leurs espaces verts. Notre passion pour la nature
+                        et notre savoir-faire font la différence.
+                    </p>
+                    <ul class="about__list">
+                        <li>Devis gratuit et personnalisé</li>
+                        <li>Équipe qualifiée et passionnée</li>
+                        <li>Matériel professionnel de qualité</li>
+                        <li>Respect de l'environnement</li>
+                        <li>Suivi et conseils après intervention</li>
+                    </ul>
+                    <a href="a-propos.html" class="btn btn--primary">En savoir plus</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Témoignages -->
+    <section class="section section--blanc">
+        <div class="container">
+            <h2 class="section-title">Ce que disent nos clients</h2>
+            <div class="testimonials">
+                <div class="testimonial">
+                    <div class="testimonial__stars">★★★★★</div>
+                    <p class="testimonial__text">
+                        "Travail remarquable ! L'équipe d'Arnold Paysages a complètement transformé notre jardin.
+                        Professionnalisme, ponctualité et résultat au-delà de nos attentes."
+                    </p>
+                    <div class="testimonial__author">
+                        <div class="testimonial__avatar">ML</div>
+                        <div>
+                            <div class="testimonial__name">Marie Lecomte</div>
+                            <div class="testimonial__location">Toulouse</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial">
+                    <div class="testimonial__stars">★★★★★</div>
+                    <p class="testimonial__text">
+                        "Arnold et son équipe sont intervenus pour l'aménagement complet de notre terrasse.
+                        Un travail soigné, des conseils précieux et un excellent rapport qualité-prix."
+                    </p>
+                    <div class="testimonial__author">
+                        <div class="testimonial__avatar">PD</div>
+                        <div>
+                            <div class="testimonial__name">Pierre Dubois</div>
+                            <div class="testimonial__location">Blagnac</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial">
+                    <div class="testimonial__stars">★★★★★</div>
+                    <p class="testimonial__text">
+                        "Nous faisons appel à Arnold Paysages pour l'entretien régulier de notre jardin depuis 3 ans.
+                        Toujours satisfaits, équipe agréable et travail impeccable."
+                    </p>
+                    <div class="testimonial__author">
+                        <div class="testimonial__avatar">SC</div>
+                        <div>
+                            <div class="testimonial__name">Sophie Caron</div>
+                            <div class="testimonial__location">Colomiers</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center" style="margin-top: 3rem;">
+                <a href="avis.html" class="btn btn--secondary">Voir tous les avis</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section CTA -->
+    <section class="cta">
+        <div class="container">
+            <h2>Prêt à transformer votre extérieur ?</h2>
+            <p>
+                Contactez-nous dès maintenant pour obtenir un devis gratuit et personnalisé.
+                Nous nous déplaçons chez vous pour étudier votre projet.
+            </p>
+            <a href="contact.html" class="btn btn--marron">Demander un devis gratuit</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__content">
+            <div class="footer__logo">Arnold Paysages</div>
+            <p class="footer__tagline">Votre partenaire pour des espaces verts d'exception</p>
+            <div class="footer__divider"></div>
+            <p class="footer__copyright">
+                &copy; 2024 Arnold Paysages - Tous droits réservés
+            </p>
+        </div>
+    </footer>
+
+    <!-- Script pour le menu mobile -->
+    <script>
+        function toggleMenu() {
+            const navList = document.getElementById('navList');
+            navList.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

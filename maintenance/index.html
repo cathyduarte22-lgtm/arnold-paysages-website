@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Arnold Paysages - Site en maintenance">
+    <title>Arnold Paysages - Site en maintenance</title>
+    <style>
+        /* Reset et base */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            --vert-principal: #294a23;
+            --beige-clair: #f3f4f1;
+            --marron-accent: #55381d;
+            --vert-secondaire: #165c2a;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, 'Segoe UI', Arial, sans-serif;
+            background-color: var(--beige-clair);
+            color: var(--vert-principal);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 600px;
+            text-align: center;
+            background-color: #fff;
+            padding: 3rem 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(41, 74, 35, 0.1);
+        }
+
+        /* Logo placeholder */
+        .logo {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 2rem;
+            background-color: var(--vert-principal);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logo svg {
+            width: 60px;
+            height: 60px;
+            fill: var(--beige-clair);
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+            color: var(--vert-principal);
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            color: var(--vert-secondaire);
+            margin-bottom: 2rem;
+            font-weight: 500;
+        }
+
+        .message {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: var(--marron-accent);
+        }
+
+        .description {
+            font-size: 1rem;
+            color: #555;
+            margin-bottom: 2rem;
+        }
+
+        .divider {
+            width: 80px;
+            height: 4px;
+            background-color: var(--vert-secondaire);
+            margin: 2rem auto;
+            border-radius: 2px;
+        }
+
+        .contact-info {
+            font-size: 0.95rem;
+            color: var(--vert-principal);
+        }
+
+        .contact-info a {
+            color: var(--vert-secondaire);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            margin-top: 3rem;
+            font-size: 0.85rem;
+            color: #777;
+        }
+
+        /* Animation subtile */
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+
+        .loading-indicator {
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+            margin-top: 1.5rem;
+        }
+
+        .loading-indicator span {
+            width: 10px;
+            height: 10px;
+            background-color: var(--vert-secondaire);
+            border-radius: 50%;
+            animation: pulse 1.5s ease-in-out infinite;
+        }
+
+        .loading-indicator span:nth-child(2) {
+            animation-delay: 0.3s;
+        }
+
+        .loading-indicator span:nth-child(3) {
+            animation-delay: 0.6s;
+        }
+
+        /* Responsive */
+        @media (max-width: 480px) {
+            .container {
+                padding: 2rem 1.5rem;
+            }
+
+            h1 {
+                font-size: 1.6rem;
+            }
+
+            .message {
+                font-size: 1.25rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Logo placeholder avec icône de feuille -->
+        <div class="logo">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M17,8C8,10,5.9,16.17,3.82,21.34L5.71,22l1-2.3A4.49,4.49,0,0,0,8,20C19,20,22,3,22,3,21,5,14,5.25,9,6.25S2,11.5,2,13.5a6.22,6.22,0,0,0,1.75,3.75C7,8,17,8,17,8Z"/>
+            </svg>
+        </div>
+
+        <h1>Arnold Paysages</h1>
+        <p class="subtitle">Aménagement paysager & Espaces verts</p>
+
+        <div class="divider"></div>
+
+        <p class="message">Site en maintenance</p>
+        <p class="description">
+            Nous travaillons actuellement à l'amélioration de notre site internet
+            pour vous offrir une meilleure expérience.<br><br>
+            Notre nouveau site sera bientôt disponible.
+        </p>
+
+        <div class="loading-indicator">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <div class="divider"></div>
+
+        <p class="contact-info">
+            Pour toute demande urgente, n'hésitez pas à nous contacter directement.<br>
+            <strong>Merci de votre patience et de votre compréhension.</strong>
+        </p>
+    </div>
+
+    <footer>
+        &copy; 2024 Arnold Paysages - Tous droits réservés
+    </footer>
+</body>
+</html>
