@@ -2,36 +2,80 @@
 # CONFIGURATION NETLIFY - Arnold Paysages
 # =====================================================
 #
-# IMPORTANT: Site actuellement en mode MAINTENANCE
+# STRATÉGIE DE DÉPLOIEMENT:
+# - Branche principale (main) : affiche la page de maintenance
+# - Branche de développement (dev/production) : site complet en preview
 #
-# Pour activer le site final, changez la ligne publish :
-#   - Mode maintenance (actuel) : publish = "maintenance"
-#   - Mode site complet         : publish = "site"
+# Pour activer le site final sur le domaine principal :
+#   1. Changez publish = "maintenance" en publish = "site"
+#   OU
+#   2. Utilisez le split testing dans les paramètres Netlify
 #
 # =====================================================
 
 [build]
-  # Mode MAINTENANCE activé - Le site affiche la page de maintenance
+  # Mode MAINTENANCE activé - Le public voit la page de maintenance
   publish = "maintenance"
-  # Pas de commande de build nécessaire pour un site statique HTML/CSS
   command = "echo 'Site statique - pas de build necessaire'"
 
-# Variables d'environnement pour désactiver le plugin Next.js
-# Ce projet contient des fichiers Next.js hérités mais le site
-# Arnold Paysages est purement statique (HTML/CSS)
+# Variables d'environnement
 [build.environment]
   NETLIFY_NEXT_PLUGIN_SKIP = "true"
 
-# Redirections (optionnel - pour une future configuration)
+# =====================================================
+# CONFIGURATION PAR BRANCHE (Branch Deploys)
+# =====================================================
+
+# Branche de développement - déploie le site complet
+# Accessible via: dev--arnold-paysages.netlify.app
+[context.dev]
+  publish = "site"
+  command = "echo 'Deploiement branche dev - site complet'"
+
+# Branche de production - déploie le site complet
+# Accessible via: production--arnold-paysages.netlify.app
+[context.production]
+  publish = "site"
+  command = "echo 'Deploiement branche production - site complet'"
+
+# Configuration pour les deploy previews (Pull Requests)
+[context.deploy-preview]
+  publish = "site"
+  command = "echo 'Deploy preview - site complet'"
+
+# Configuration pour les branch deploys
+[context.branch-deploy]
+  publish = "site"
+  command = "echo 'Branch deploy - site complet'"
+
+# =====================================================
+# REDIRECTIONS
+# =====================================================
+
+# Redirection catch-all pour SPA (si nécessaire)
 # [[redirects]]
 #   from = "/*"
 #   to = "/index.html"
 #   status = 200
 
-# Headers de sécurité (optionnel)
+# =====================================================
+# HEADERS DE SÉCURITÉ
+# =====================================================
+
 [[headers]]
   for = "/*"
   [headers.values]
     X-Frame-Options = "DENY"
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
+
+# Cache pour les assets statiques
+[[headers]]
+  for = "/css/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000"
+
+[[headers]]
+  for = "*.css"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000"
