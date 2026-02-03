@@ -11,15 +11,10 @@
     <!-- Header / Navigation -->
     <header class="header">
         <div class="header__container">
-            <a href="index.html" class="header__logo">
-                <div class="header__logo-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                        <path d="M17,8C8,10,5.9,16.17,3.82,21.34L5.71,22l1-2.3A4.49,4.49,0,0,0,8,20C19,20,22,3,22,3,21,5,14,5.25,9,6.25S2,11.5,2,13.5a6.22,6.22,0,0,0,1.75,3.75C7,8,17,8,17,8Z"/>
-                    </svg>
-                </div>
-                <span>Arnold Paysages</span>
+            <a href="index.html" class="header__logo" aria-label="Arnold Paysages, retour à l'accueil">
+                <img src="images/logo_header.png" alt="Arnold Paysages">
             </a>
-            <nav>
+            <nav class="header__nav">
                 <button class="nav__toggle" aria-label="Menu" onclick="toggleMenu()">
                     <span></span>
                     <span></span>
@@ -33,84 +28,42 @@
                     <li><a href="contact.html" class="nav__link">Contact</a></li>
                 </ul>
             </nav>
+            <div class="header__actions">
+                <a href="contact.html" class="btn btn--header btn--header-primary">Demander un devis</a>
+                <a href="realisations.html" class="btn btn--header btn--header-outline">Voir nos réalisations</a>
+            </div>
         </div>
     </header>
 
     <!-- Hero Section -->
     <section class="hero">
-        <div class="hero__content">
-            <h1 class="hero__title">Transformez votre extérieur en havre de paix</h1>
-            <p class="hero__subtitle">
-                Arnold Paysages crée et entretient vos espaces verts avec passion et expertise.
-                Du jardin intimiste à l'aménagement paysager complet, nous donnons vie à vos projets.
-            </p>
-            <div class="hero__buttons">
-                <a href="contact.html" class="btn btn--primary">Demander un devis gratuit</a>
-                <a href="realisations.html" class="btn btn--secondary" style="background-color: transparent; border-color: #fff; color: #fff;">Voir nos réalisations</a>
+        <div class="hero__grid">
+            <div class="hero__panel hero__panel--content">
+                <div class="hero__icon" aria-hidden="true">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M4 6h12a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H6l-4 3V8a2 2 0 0 1 2-2zm17 2h1a2 2 0 0 1 2 2v10l-4-3H9a2 2 0 0 1-2-2v-1h11a3 3 0 0 0 3-3z"/>
+                    </svg>
+                </div>
+                <h1 class="hero__title">Transformez votre extérieur en oasis de verdure</h1>
+                <p class="hero__subtitle">
+                    À l'écoute de vos envies, nous concevons et entretenons des jardins sur mesure, en collaboration
+                    avec des artisans locaux et des partenaires suisses. Basés à Vex, nous intervenons dans tout le
+                    Valais pour donner vie à des extérieurs durables, soignés et harmonieux.
+                </p>
+                <div class="hero__buttons">
+                    <a href="contact.html" class="btn btn--hero btn--hero-primary">Demandez un devis</a>
+                    <a href="realisations.html" class="btn btn--hero btn--hero-outline">Découvrez nos projets</a>
+                </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Section Services -->
-    <section class="section section--blanc">
-        <div class="container">
-            <h2 class="section-title">Nos Services</h2>
-            <div class="services">
-                <!-- Service 1 -->
-                <div class="card">
-                    <div class="card__image">
-                        <span>[ Image création de jardins ]</span>
-                    </div>
-                    <div class="card__content">
-                        <h3 class="card__title">Création de jardins</h3>
-                        <p class="card__text">
-                            Conception et réalisation de jardins sur mesure adaptés à vos envies et à votre terrain.
-                            Nous créons des espaces harmonieux et durables.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Service 2 -->
-                <div class="card">
-                    <div class="card__image">
-                        <span>[ Image entretien espaces verts ]</span>
-                    </div>
-                    <div class="card__content">
-                        <h3 class="card__title">Entretien d'espaces verts</h3>
-                        <p class="card__text">
-                            Tonte, taille, désherbage, traitement... Nous prenons soin de votre jardin tout au long
-                            de l'année pour le maintenir en parfait état.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Service 3 -->
-                <div class="card">
-                    <div class="card__image">
-                        <span>[ Image aménagement extérieur ]</span>
-                    </div>
-                    <div class="card__content">
-                        <h3 class="card__title">Aménagement extérieur</h3>
-                        <p class="card__text">
-                            Terrasses, allées, clôtures, murets... Nous réalisons tous vos travaux d'aménagement
-                            pour sublimer votre espace extérieur.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Service 4 -->
-                <div class="card">
-                    <div class="card__image">
-                        <span>[ Image élagage ]</span>
-                    </div>
-                    <div class="card__content">
-                        <h3 class="card__title">Élagage & Abattage</h3>
-                        <p class="card__text">
-                            Intervention professionnelle pour l'élagage et l'abattage de vos arbres en toute sécurité.
-                            Respect des normes et de l'environnement.
-                        </p>
-                    </div>
-                </div>
+            <div class="hero__panel hero__panel--intro">
+                <p>
+                    Bienvenue chez Arnold Paysages, où la nature rencontre l'art de l'aménagement. Nous sommes
+                    passionnés par la création d'espaces extérieurs qui inspirent et apaisent. Que vous souhaitiez
+                    remodeler votre jardin ou créer une ambiance conviviale pour vos réceptions, notre équipe est à
+                    votre écoute. Profitez de notre expertise pour donner vie à vos idées. Nous vous accompagnons à
+                    chaque étape, de la conception à la réalisation, en mettant l'accent sur un travail soigné et
+                    respectueux de l'environnement. Ensemble, cultivons votre projet dans les règles de l'art.
+                </p>
             </div>
         </div>
     </section>
