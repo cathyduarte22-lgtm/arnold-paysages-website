@@ -11,28 +11,27 @@
     <!-- Header / Navigation -->
     <header class="header">
         <div class="header__container">
-            <a href="index.html" class="header__logo">
-                <div class="header__logo-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                        <path d="M17,8C8,10,5.9,16.17,3.82,21.34L5.71,22l1-2.3A4.49,4.49,0,0,0,8,20C19,20,22,3,22,3,21,5,14,5.25,9,6.25S2,11.5,2,13.5a6.22,6.22,0,0,0,1.75,3.75C7,8,17,8,17,8Z"/>
-                    </svg>
-                </div>
-                <span>Arnold Paysages</span>
+            <a href="index.html" class="header__logo" aria-label="Arnold Paysages, retour à l'accueil">
+                <img src="images/logo_header.png" alt="Arnold Paysages">
             </a>
-            <nav>
+            <nav class="header__nav">
                 <button class="nav__toggle" aria-label="Menu" onclick="toggleMenu()">
                     <span></span>
                     <span></span>
                     <span></span>
                 </button>
                 <ul class="nav__list" id="navList">
-                    <li><a href="index.html" class="nav__link">Accueil</a></li>
-                    <li><a href="realisations.html" class="nav__link nav__link--active">Réalisations</a></li>
+                    <li><a href="index.html" class="nav__link nav__link--active">Accueil</a></li>
+                    <li><a href="realisations.html" class="nav__link">Réalisations</a></li>
                     <li><a href="a-propos.html" class="nav__link">À propos</a></li>
                     <li><a href="avis.html" class="nav__link">Avis clients</a></li>
                     <li><a href="contact.html" class="nav__link">Contact</a></li>
                 </ul>
             </nav>
+            <div class="header__actions">
+                <a href="contact.html" class="btn btn--header btn--header-primary">Demander un devis</a>
+                <a href="realisations.html" class="btn btn--header btn--header-outline">Voir nos réalisations</a>
+            </div>
         </div>
     </header>
 
