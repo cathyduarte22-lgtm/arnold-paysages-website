@@ -299,7 +299,7 @@ p {
     min-height: calc(100vh - var(--header-height));
     display: flex;
     align-items: center;
-    background-image: url('../images/header.jpg');
+    background-image: url('/images/header.jpg');
     background-size: cover;
     background-position: center;
 }
@@ -331,11 +331,14 @@ p {
     font-size: 48px;
     margin-bottom: 1.5rem;
     font-weight: 700;
+    color: var(--blanc);
+    opacity: 1;
 }
 
 .hero__subtitle {
     font-size: 18px;
-    opacity: 0.92;
+    color: var(--blanc);
+    opacity: 1;
     margin-bottom: 2.5rem;
     max-width: 720px;
 }
