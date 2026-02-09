@@ -47,7 +47,9 @@
                 <!-- Formulaire -->
                 <div class="contact-form">
                     <h2 style="margin-bottom: 1.5rem; color: var(--vert-principal);">Demande de devis gratuit</h2>
-                    <form action="#" method="POST">
+                    <form name="demande-devis" method="POST" data-netlify="true" action="/contact.html">
+                        <input type="hidden" name="form-name" value="demande-devis">
+                        <input type="hidden" name="subject" value="Demande de devis gratuit">
                         <div class="form-group">
                             <label for="nom">Nom complet *</label>
                             <input type="text" id="nom" name="nom" placeholder="Votre nom et prénom" required>
@@ -66,25 +68,6 @@
                         <div class="form-group">
                             <label for="ville">Ville / Commune</label>
                             <input type="text" id="ville" name="ville" placeholder="Toulouse, Blagnac, Colomiers...">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="service">Type de prestation souhaitée</label>
-                            <select id="service" name="service">
-                                <option value="">-- Sélectionnez une option --</option>
-                                <option value="creation-jardin">Création de jardin</option>
-                                <option value="amenagement">Aménagement extérieur (terrasse, allée...)</option>
-                                <option value="entretien">Entretien régulier</option>
-                                <option value="elagage">Élagage / Abattage</option>
-                                <option value="engazonnement">Engazonnement</option>
-                                <option value="cloture">Clôture / Haie</option>
-                                <option value="autre">Autre (préciser dans le message)</option>
-                            </select>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="surface">Surface approximative du terrain (m²)</label>
-                            <input type="text" id="surface" name="surface" placeholder="Ex: 200 m²">
                         </div>
 
                         <div class="form-group">
