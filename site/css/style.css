@@ -725,13 +725,15 @@ p {
 
 .footer__grid {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 2.5rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3rem;
+    text-align: center;
 }
 
 .footer__column {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 0.75rem;
 }
 
@@ -748,6 +750,7 @@ p {
 .footer__description {
     opacity: 0.8;
     margin: 0;
+    max-width: 280px;
 }
 
 .footer__title {
@@ -780,6 +783,7 @@ p {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    align-items: center;
 }
 
 .footer__contact-item {
@@ -842,7 +846,7 @@ p {
 
 @media (max-width: 960px) {
     .footer__grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-columns: 1fr 1fr;
     }
 }
 
@@ -853,6 +857,7 @@ p {
 
     .footer__grid {
         grid-template-columns: 1fr;
+        gap: 2.5rem;
     }
 
     .footer__bottom {
@@ -1095,21 +1100,78 @@ p {
 .partenaires__title {
     color: #333333;
     font-size: clamp(1.75rem, 4vw, 2.5rem);
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 }
 
-.partenaires__logo {
-    display: inline-block;
+.partenaires__grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2.5rem 3rem;
+    max-width: var(--container-max);
+    margin: 0 auto;
 }
 
-.partenaires__logo img {
-    width: 200px;
-    height: auto;
-    transition: opacity 0.3s ease;
+.partenaires__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    width: 150px;
+    text-decoration: none;
 }
 
-.partenaires__logo:hover img {
-    opacity: 0.8;
+.partenaires__item--link {
+    cursor: pointer;
+}
+
+.partenaires__item--link:hover .partenaires__logo-img {
+    opacity: 0.7;
+    transform: scale(1.05);
+}
+
+.partenaires__logo-img {
+    width: 150px;
+    height: 100px;
+    object-fit: contain;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.partenaires__name {
+    font-size: 0.8rem;
+    color: #888888;
+    line-height: 1.3;
+}
+
+@media (max-width: 768px) {
+    .partenaires__grid {
+        gap: 2rem;
+    }
+
+    .partenaires__item {
+        width: 130px;
+    }
+
+    .partenaires__logo-img {
+        width: 130px;
+        height: 85px;
+    }
+}
+
+@media (max-width: 480px) {
+    .partenaires__grid {
+        gap: 1.5rem;
+    }
+
+    .partenaires__item {
+        width: 110px;
+    }
+
+    .partenaires__logo-img {
+        width: 110px;
+        height: 75px;
+    }
 }
 
 /* -------------------- Quatre Saisons (Vivaldi) -------------------- */
