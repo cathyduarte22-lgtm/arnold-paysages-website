@@ -1274,3 +1274,222 @@ p {
         grid-template-columns: 1fr;
     }
 }
+
+/* -------------------- Réalisations Page -------------------- */
+.realisations-hero {
+    background-color: var(--blanc);
+    padding: 60px 2rem 40px;
+    text-align: center;
+}
+
+.realisations-hero h1 {
+    color: #333333;
+    margin-bottom: 1rem;
+}
+
+.realisations-hero p {
+    color: #555555;
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+.realisations-services {
+    background-color: #F5F5F5;
+    padding: 60px 2rem;
+}
+
+.realisations-services h2 {
+    text-align: center;
+    color: #333333;
+    margin-bottom: 2.5rem;
+}
+
+.services-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.25rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.services-list__item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 1.25rem;
+    background-color: var(--blanc);
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+    font-weight: 500;
+    color: #333333;
+}
+
+.services-list__icon {
+    width: 36px;
+    height: 36px;
+    background-color: var(--vert-principal);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.services-list__icon svg {
+    width: 18px;
+    height: 18px;
+    fill: var(--blanc);
+    stroke: var(--blanc);
+    stroke-width: 0;
+}
+
+/* Category sections */
+.realisation-category {
+    padding: 60px 2rem;
+}
+
+.realisation-category--white {
+    background-color: var(--blanc);
+}
+
+.realisation-category--gray {
+    background-color: #F5F5F5;
+}
+
+.realisation-category__inner {
+    max-width: var(--container-max);
+    margin: 0 auto;
+}
+
+.realisation-category__title {
+    color: var(--vert-principal);
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    margin-bottom: 1rem;
+}
+
+.realisation-category__text {
+    color: #555555;
+    max-width: 800px;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+}
+
+/* Carousel */
+.carousel {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.carousel__track {
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    scroll-snap-type: x mandatory;
+    padding: 0.5rem 0;
+}
+
+.carousel__track::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel__slide {
+    flex: 0 0 auto;
+    width: 500px;
+    max-width: 80vw;
+    scroll-snap-align: start;
+}
+
+.carousel__slide img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    display: block;
+}
+
+.carousel__btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255,255,255,0.9);
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+    z-index: 2;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.carousel__btn:hover {
+    background-color: var(--blanc);
+    transform: translateY(-50%) scale(1.1);
+}
+
+.carousel__btn svg {
+    width: 20px;
+    height: 20px;
+    stroke: #333333;
+    fill: none;
+    stroke-width: 2.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.carousel__btn--prev {
+    left: 12px;
+}
+
+.carousel__btn--next {
+    right: 12px;
+}
+
+@media (max-width: 768px) {
+    .carousel__slide {
+        width: 320px;
+        max-width: 85vw;
+    }
+
+    .carousel__slide img {
+        height: 280px;
+    }
+
+    .carousel__btn {
+        width: 38px;
+        height: 38px;
+    }
+
+    .carousel__btn--prev {
+        left: 8px;
+    }
+
+    .carousel__btn--next {
+        right: 8px;
+    }
+
+    .services-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .carousel__slide {
+        width: 280px;
+    }
+
+    .carousel__slide img {
+        height: 220px;
+    }
+}
