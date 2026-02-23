@@ -1542,3 +1542,12 @@ p {
         height: 220px;
     }
 }
+
+/* Instagram icon hover */
+.instagram-icon {
+    transition: fill 0.3s ease;
+}
+
+a:hover .instagram-icon {
+    fill: #3a6b30;
+}
