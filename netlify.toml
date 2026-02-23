@@ -17,6 +17,7 @@
   # Mode MAINTENANCE activé - Le public voit la page de maintenance
   publish = "maintenance"
   command = "echo 'Site statique - pas de build necessaire'"
+  functions = "netlify/functions"
 
 # Variables d'environnement
 [build.environment]
