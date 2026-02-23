@@ -201,12 +201,9 @@ p {
     display: flex;
     align-items: center;
     color: var(--vert-secondaire);
-}
-
-.header__logo img {
-    width: 140px;
-    height: auto;
-    display: block;
+    font-size: 1.4rem;
+    font-weight: 700;
+    white-space: nowrap;
 }
 
 .header__nav {
@@ -237,12 +234,13 @@ p {
 
 .nav__link:hover,
 .nav__link--active {
-    color: var(--vert-secondaire);
+    color: #6B996C;
 }
 
 .nav__link:hover::after,
 .nav__link--active::after {
     width: 100%;
+    background-color: #6B996C;
 }
 
 /* Menu burger mobile */
@@ -727,7 +725,7 @@ p {
 
 .footer__grid {
     display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 2.5rem;
 }
 
@@ -1062,6 +1060,29 @@ p {
     .stat__number {
         font-size: 2.5rem;
     }
+}
+
+/* -------------------- Form Confirmation Notification -------------------- */
+.form-notification {
+    display: none;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+    font-size: 0.95rem;
+    animation: fadeIn 0.3s ease;
+}
+
+.form-notification--success {
+    display: block;
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
 /* -------------------- Nos Partenaires -------------------- */
