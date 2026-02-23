@@ -1063,3 +1063,131 @@ p {
         font-size: 2.5rem;
     }
 }
+
+/* -------------------- Nos Partenaires -------------------- */
+.partenaires {
+    background-color: var(--blanc);
+    padding: 60px 2rem;
+    text-align: center;
+}
+
+.partenaires__title {
+    color: #333333;
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    margin-bottom: 2rem;
+}
+
+.partenaires__logo {
+    display: inline-block;
+}
+
+.partenaires__logo img {
+    width: 200px;
+    height: auto;
+    transition: opacity 0.3s ease;
+}
+
+.partenaires__logo:hover img {
+    opacity: 0.8;
+}
+
+/* -------------------- Quatre Saisons (Vivaldi) -------------------- */
+.saisons {
+    padding: 60px 2rem;
+    background-color: var(--beige-clair);
+}
+
+.saisons__title {
+    text-align: center;
+    color: #333333;
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    margin-bottom: 1.5rem;
+}
+
+.saisons__intro {
+    text-align: center;
+    color: #333333;
+    max-width: 800px;
+    margin: 0 auto 3rem;
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+.saisons__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    max-width: var(--container-max);
+    margin: 0 auto;
+}
+
+.saison-card {
+    position: relative;
+    min-height: 400px;
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    padding: 30px;
+}
+
+.saison-card__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background-position: center;
+}
+
+.saison-card--printemps .saison-card__bg {
+    background: linear-gradient(135deg, #a8e063 0%, #56ab2f 40%, #f7c948 100%);
+}
+
+.saison-card--ete .saison-card__bg {
+    background: linear-gradient(135deg, #f7971e 0%, #ffd200 40%, #56ab2f 100%);
+}
+
+.saison-card--automne .saison-card__bg {
+    background: linear-gradient(135deg, #c0392b 0%, #e67e22 40%, #f1c40f 100%);
+}
+
+.saison-card--hiver .saison-card__bg {
+    background: linear-gradient(135deg, #667db6 0%, #0082c8 40%, #d4e4ef 100%);
+}
+
+.saison-card__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.45);
+}
+
+.saison-card__content {
+    position: relative;
+    z-index: 1;
+    color: #ffffff;
+}
+
+.saison-card__title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 1rem;
+}
+
+.saison-card__text {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #ffffff;
+    opacity: 0.95;
+}
+
+@media (max-width: 768px) {
+    .saisons__grid {
+        grid-template-columns: 1fr;
+    }
+}
