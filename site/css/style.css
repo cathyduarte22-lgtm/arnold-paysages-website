@@ -1225,7 +1225,7 @@ p {
 
 /* -------------------- Quatre Saisons (Vivaldi) -------------------- */
 .saisons {
-    padding: 60px 2rem;
+    padding: 80px 2rem;
     background-color: var(--beige-clair);
 }
 
@@ -1274,19 +1274,19 @@ p {
 }
 
 .saison-card--printemps .saison-card__bg {
-    background: linear-gradient(135deg, #a8e063 0%, #56ab2f 40%, #f7c948 100%);
+    background: url('/images/printemps.jpg') center / cover no-repeat;
 }
 
 .saison-card--ete .saison-card__bg {
-    background: linear-gradient(135deg, #f7971e 0%, #ffd200 40%, #56ab2f 100%);
+    background: url('/images/ete.jpg') center / cover no-repeat;
 }
 
 .saison-card--automne .saison-card__bg {
-    background: linear-gradient(135deg, #c0392b 0%, #e67e22 40%, #f1c40f 100%);
+    background: url('/images/automne.jpg') center / cover no-repeat;
 }
 
 .saison-card--hiver .saison-card__bg {
-    background: linear-gradient(135deg, #667db6 0%, #0082c8 40%, #d4e4ef 100%);
+    background: url('/images/hiver.jpg') center / cover no-repeat;
 }
 
 .saison-card__overlay {
@@ -1295,7 +1295,22 @@ p {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.45);
+}
+
+.saison-card--printemps .saison-card__overlay {
+    background: rgba(86, 171, 47, 0.7);
+}
+
+.saison-card--ete .saison-card__overlay {
+    background: rgba(128, 176, 30, 0.7);
+}
+
+.saison-card--automne .saison-card__overlay {
+    background: rgba(180, 100, 30, 0.7);
+}
+
+.saison-card--hiver .saison-card__overlay {
+    background: rgba(50, 100, 180, 0.7);
 }
 
 .saison-card__content {
@@ -1309,6 +1324,7 @@ p {
     font-weight: 700;
     color: #ffffff;
     margin-bottom: 1rem;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
 }
 
 .saison-card__text {
@@ -1316,6 +1332,7 @@ p {
     line-height: 1.7;
     color: #ffffff;
     opacity: 0.95;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
 }
 
 @media (max-width: 768px) {
