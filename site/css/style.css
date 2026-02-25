@@ -1229,11 +1229,22 @@ p {
     background-color: var(--beige-clair);
 }
 
+.saisons--hero {
+    padding-top: 60px;
+    padding-bottom: 80px;
+    background: linear-gradient(135deg, var(--vert-principal) 0%, var(--vert-secondaire) 100%);
+}
+
 .saisons__title {
     text-align: center;
     color: #333333;
     font-size: clamp(1.75rem, 4vw, 2.5rem);
     margin-bottom: 1.5rem;
+}
+
+.saisons--hero .saisons__title {
+    color: #ffffff;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
 .saisons__intro {
@@ -1243,6 +1254,11 @@ p {
     margin: 0 auto 3rem;
     font-size: 1.05rem;
     line-height: 1.8;
+}
+
+.saisons--hero .saisons__intro {
+    color: rgba(255, 255, 255, 0.92);
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
 }
 
 .saisons__grid {
@@ -1298,19 +1314,19 @@ p {
 }
 
 .saison-card--printemps .saison-card__overlay {
-    background: rgba(86, 171, 47, 0.7);
+    background: rgba(10, 40, 10, 0.5);
 }
 
 .saison-card--ete .saison-card__overlay {
-    background: rgba(128, 176, 30, 0.7);
+    background: rgba(10, 40, 10, 0.5);
 }
 
 .saison-card--automne .saison-card__overlay {
-    background: rgba(180, 100, 30, 0.7);
+    background: rgba(10, 40, 10, 0.5);
 }
 
 .saison-card--hiver .saison-card__overlay {
-    background: rgba(50, 100, 180, 0.7);
+    background: rgba(10, 40, 10, 0.5);
 }
 
 .saison-card__content {
@@ -1324,7 +1340,7 @@ p {
     font-weight: 700;
     color: #ffffff;
     margin-bottom: 1rem;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6), 0 1px 3px rgba(0, 0, 0, 0.4);
 }
 
 .saison-card__text {
@@ -1332,7 +1348,7 @@ p {
     line-height: 1.7;
     color: #ffffff;
     opacity: 0.95;
-    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5), 0 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 @media (max-width: 768px) {
