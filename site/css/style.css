@@ -623,6 +623,96 @@ p {
     font-weight: bold;
 }
 
+/* -------------------- Collaboration Architecture & Paysage -------------------- */
+.collaboration {
+    background-color: #FFFFFF;
+    padding: 80px 1.5rem;
+}
+
+.collaboration__container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.collaboration__title {
+    font-family: 'Montserrat', 'Open Sans', system-ui, -apple-system, 'Segoe UI', Arial, sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    color: #6B996C;
+    margin: 0;
+}
+
+.collaboration__text {
+    margin-top: 20px;
+    color: #333333;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.collaboration__media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.collaboration__logo-link {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.collaboration__logo-link:hover {
+    transform: scale(1.05);
+}
+
+.collaboration__logo {
+    max-width: 250px;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+    display: block;
+}
+
+@media (max-width: 992px) {
+    .collaboration {
+        padding: 60px 1.5rem;
+    }
+
+    .collaboration__container {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+
+    .collaboration__media {
+        order: 2;
+    }
+
+    .collaboration__title {
+        font-size: 32px;
+        line-height: 40px;
+    }
+}
+
+@media (max-width: 576px) {
+    .collaboration {
+        padding: 48px 1.25rem;
+    }
+
+    .collaboration__title {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .collaboration__logo {
+        max-width: 200px;
+    }
+}
+
 /* -------------------- Formulaire de contact -------------------- */
 .contact-grid {
     display: grid;
